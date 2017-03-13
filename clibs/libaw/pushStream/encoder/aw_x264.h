@@ -16,6 +16,10 @@
 #include "x264_config.h"
 #include "aw_data.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 typedef struct aw_x264_config{
     //宽高
     int width;
@@ -69,5 +73,9 @@ extern void aw_encode_yuv_frame_2_x264(aw_x264_context *aw_ctx, int8_t *yuv_fram
 
 //构造spspps
 extern aw_data *aw_create_sps_pps_data(uint8_t *sps_bytes, uint32_t sps_len, uint8_t *pps_bytes, uint32_t pps_len);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* aw_yuv2h264_h */

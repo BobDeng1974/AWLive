@@ -15,6 +15,10 @@
 #include <stdio.h>
 #include "aw_all.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 //单例
 //打开流
 extern int8_t aw_streamer_open(const char *rtmp_url, aw_rtmp_state_changed_cb state_changed_cb);
@@ -34,4 +38,7 @@ extern void aw_streamer_send_video_sps_pps_tag(aw_flv_video_tag *sps_pps_tag);
 //发送 audio specific config
 extern void aw_streamer_send_audio_specific_config_tag(aw_flv_audio_tag *asc_tag);
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* aw_streamer_h */

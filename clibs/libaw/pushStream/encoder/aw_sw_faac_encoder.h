@@ -14,6 +14,10 @@
 #include "aw_faac.h"
 #include "aw_encode_flv.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 //编码器开关
 extern void aw_sw_encoder_open_faac_encoder(aw_faac_config *faac_config);
 extern void aw_sw_encoder_close_faac_encoder();
@@ -35,5 +39,7 @@ extern aw_flv_audio_tag *aw_encoder_create_audio_tag(int8_t *aac_data, long len,
 //创建audio_specific_config_tag
 extern aw_flv_audio_tag *aw_encoder_create_audio_specific_config_tag(aw_data *audio_specific_config_data, aw_faac_config *faac_config);
 
-
+#ifdef __cplusplus
+}
+#endif
 #endif /* aw_sw_audio_encoder_h */

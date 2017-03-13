@@ -12,7 +12,12 @@
 #define aw_alloc_h
 
 #include <stdio.h>
+#include "bs_type.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 #if defined(__FILE__) && defined(__LINE__)
 #define aw_alloc(size) aw_alloc_detail((size), __FILE__, __LINE__)
 #else
@@ -42,4 +47,7 @@ extern size_t aw_total_free_size();
 //打印内存alloc/free/leak状况
 extern void aw_print_alloc_description();
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* aw_alloc_h */

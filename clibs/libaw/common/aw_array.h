@@ -12,6 +12,7 @@
  */
 
 #include <stdio.h>
+#include "bs_type.h"
 
 typedef enum aw_array_element_type{
     AW_ARRAY_ELEMENT_TYPE_INT,

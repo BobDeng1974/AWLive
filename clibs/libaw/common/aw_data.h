@@ -13,7 +13,12 @@
 #define aw_data_h
 
 #include <stdio.h>
+#include "bs_type.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 //文件数据
 typedef struct aw_data{
     uint32_t size;//有效数据长度
@@ -79,5 +84,9 @@ extern aw_data_writer data_writer;
 
 //测试本文件
 extern void aw_data_test();
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* aw_data_h */

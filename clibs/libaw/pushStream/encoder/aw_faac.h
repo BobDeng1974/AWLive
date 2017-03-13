@@ -16,6 +16,10 @@
 #include "faaccfg.h"
 #include "aw_data.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 typedef struct aw_faac_config {
     //采样率
     int sample_rate;
@@ -60,4 +64,7 @@ extern void free_aw_faac_context(aw_faac_context **);
 
 extern void aw_encode_pcm_frame_2_aac(aw_faac_context *ctx, int8_t *pcm_data, long len);
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* aw_pcm2aac_h */

@@ -14,6 +14,10 @@
 #include <stdio.h>
 #include "aw_data.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 //flv tag type
 typedef enum aw_flv_tag_type {
     aw_flv_tag_type_audio = 8,
@@ -156,5 +160,9 @@ extern void free_aw_flv_video_tag(aw_flv_video_tag **);
 extern void aw_write_flv_header(aw_data **flv_data);
 //写入flv tag
 extern void aw_write_flv_tag(aw_data **flv_data, aw_flv_common_tag *common_tag);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif /* aw_encode_flv_h */

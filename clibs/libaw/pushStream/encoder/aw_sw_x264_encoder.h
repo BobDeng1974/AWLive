@@ -14,6 +14,10 @@
 #include "aw_x264.h"
 #include "aw_encode_flv.h"
 
+#ifdef __cplusplus
+extern "C"{
+#endif
+    
 //将采集到的video yuv数据，编码为flv video tag
 extern aw_flv_video_tag * aw_sw_encoder_encode_x264_data(int8_t *yuv_data, long len, uint32_t timeStamp);
 
@@ -32,4 +36,7 @@ extern aw_flv_video_tag *aw_encoder_create_video_tag(int8_t *h264_data, long len
 //创建sps_pps_tag
 extern aw_flv_video_tag *aw_encoder_create_sps_pps_tag(aw_data *sps_pps_data);
 
+#ifdef __cplusplus
+}
+#endif
 #endif /* aw_sw_video_encoder_h */
