@@ -44,6 +44,60 @@
 		A4269F861DCE2A8E0010A4EB /* aw_streamer.c in Sources */ = {isa = PBXBuildFile; fileRef = A4269DF51DCE2A8C0010A4EB /* aw_streamer.c */; };
 		A426A0621DCF71660010A4EB /* AWAVCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A426A0611DCF71660010A4EB /* AWAVCaptureManager.m */; };
 		A461BE391DE826D500F18219 /* camera_switch.png in Resources */ = {isa = PBXBuildFile; fileRef = A461BE381DE826D500F18219 /* camera_switch.png */; };
+		C81BB1F01E76C31500FDDE05 /* LKRtpSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C81BB1EE1E76C31500FDDE05 /* LKRtpSession.cpp */; };
+		C81BB2351E76E8BE00FDDE05 /* jmutex.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2031E76E87800FDDE05 /* jmutex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2361E76E8BE00FDDE05 /* rtcpapppacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2041E76E87800FDDE05 /* rtcpapppacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2371E76E8BE00FDDE05 /* rtcpbyepacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2051E76E87800FDDE05 /* rtcpbyepacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2381E76E8BE00FDDE05 /* rtcpcompoundpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2061E76E87800FDDE05 /* rtcpcompoundpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2391E76E8BE00FDDE05 /* rtcpcompoundpacketbuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2071E76E87800FDDE05 /* rtcpcompoundpacketbuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB23A1E76E8BE00FDDE05 /* rtcppacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2081E76E87800FDDE05 /* rtcppacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB23B1E76E8BE00FDDE05 /* rtcppacketbuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2091E76E87800FDDE05 /* rtcppacketbuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB23C1E76E8BE00FDDE05 /* rtcprrpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB20A1E76E87800FDDE05 /* rtcprrpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB23D1E76E8BE00FDDE05 /* rtcpscheduler.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB20B1E76E87800FDDE05 /* rtcpscheduler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB23E1E76E8BE00FDDE05 /* rtcpsdesinfo.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB20C1E76E87800FDDE05 /* rtcpsdesinfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB23F1E76E8BE00FDDE05 /* rtcpsdespacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB20D1E76E87800FDDE05 /* rtcpsdespacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2401E76E8BE00FDDE05 /* rtcpsrpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB20E1E76E87800FDDE05 /* rtcpsrpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2411E76E8BE00FDDE05 /* rtcpunknownpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB20F1E76E87800FDDE05 /* rtcpunknownpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2421E76E8BE00FDDE05 /* rtpaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2101E76E87800FDDE05 /* rtpaddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2431E76E8BE00FDDE05 /* rtpbyteaddress.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2111E76E87800FDDE05 /* rtpbyteaddress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2441E76E8BE00FDDE05 /* rtpcollisionlist.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2121E76E87800FDDE05 /* rtpcollisionlist.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2451E76E8BE00FDDE05 /* rtpconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2131E76E87800FDDE05 /* rtpconfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2461E76E8BE00FDDE05 /* rtpdebug.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2141E76E87800FDDE05 /* rtpdebug.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2471E76E8BE00FDDE05 /* rtpdefines.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2151E76E87800FDDE05 /* rtpdefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2481E76E8BF00FDDE05 /* rtperrors.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2161E76E87800FDDE05 /* rtperrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2491E76E8BF00FDDE05 /* rtpexternaltransmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2171E76E87800FDDE05 /* rtpexternaltransmitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB24A1E76E8BF00FDDE05 /* rtphashtable.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2181E76E87800FDDE05 /* rtphashtable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB24B1E76E8BF00FDDE05 /* rtpinternalsourcedata.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2191E76E87800FDDE05 /* rtpinternalsourcedata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB24C1E76E8BF00FDDE05 /* rtpipv4address.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB21A1E76E87800FDDE05 /* rtpipv4address.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB24D1E76E8BF00FDDE05 /* rtpipv4destination.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB21B1E76E87800FDDE05 /* rtpipv4destination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB24E1E76E8BF00FDDE05 /* rtpipv6address.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB21C1E76E87800FDDE05 /* rtpipv6address.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB24F1E76E8BF00FDDE05 /* rtpipv6destination.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB21D1E76E87800FDDE05 /* rtpipv6destination.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2501E76E8BF00FDDE05 /* rtpkeyhashtable.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB21E1E76E87800FDDE05 /* rtpkeyhashtable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2511E76E8BF00FDDE05 /* rtplibraryversion.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB21F1E76E87800FDDE05 /* rtplibraryversion.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2521E76E8BF00FDDE05 /* rtpmemorymanager.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2201E76E87800FDDE05 /* rtpmemorymanager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2531E76E8BF00FDDE05 /* rtpmemoryobject.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2211E76E87800FDDE05 /* rtpmemoryobject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2541E76E8BF00FDDE05 /* rtppacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2221E76E87800FDDE05 /* rtppacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2551E76E8BF00FDDE05 /* rtppacketbuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2231E76E87800FDDE05 /* rtppacketbuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2561E76E8BF00FDDE05 /* rtppollthread.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2241E76E87800FDDE05 /* rtppollthread.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2571E76E8BF00FDDE05 /* rtprandom.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2251E76E87800FDDE05 /* rtprandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2581E76E8BF00FDDE05 /* rtprandomrand48.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2261E76E87800FDDE05 /* rtprandomrand48.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2591E76E8BF00FDDE05 /* rtprandomrands.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2271E76E87800FDDE05 /* rtprandomrands.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB25A1E76E8BF00FDDE05 /* rtprandomurandom.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2281E76E87800FDDE05 /* rtprandomurandom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB25B1E76E8BF00FDDE05 /* rtprawpacket.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2291E76E87800FDDE05 /* rtprawpacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB25C1E76E8BF00FDDE05 /* rtpsession.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB22A1E76E87800FDDE05 /* rtpsession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB25D1E76E8BF00FDDE05 /* rtpsessionparams.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB22B1E76E87800FDDE05 /* rtpsessionparams.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB25E1E76E8BF00FDDE05 /* rtpsessionsources.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB22C1E76E87800FDDE05 /* rtpsessionsources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB25F1E76E8BF00FDDE05 /* rtpsourcedata.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB22D1E76E87800FDDE05 /* rtpsourcedata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2601E76E8BF00FDDE05 /* rtpsources.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB22E1E76E87800FDDE05 /* rtpsources.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2611E76E8BF00FDDE05 /* rtpstructs.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB22F1E76E87800FDDE05 /* rtpstructs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2621E76E8BF00FDDE05 /* rtptimeutilities.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2301E76E87800FDDE05 /* rtptimeutilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2631E76E8BF00FDDE05 /* rtptransmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2311E76E87800FDDE05 /* rtptransmitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2641E76E8BF00FDDE05 /* rtptypes_win.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2321E76E87800FDDE05 /* rtptypes_win.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2651E76E8BF00FDDE05 /* rtptypes.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2331E76E87800FDDE05 /* rtptypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2661E76E8BF00FDDE05 /* rtpudpv4transmitter.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB2341E76E87800FDDE05 /* rtpudpv4transmitter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2671E76E98E00FDDE05 /* LKRtpSession.h in Headers */ = {isa = PBXBuildFile; fileRef = C81BB1EF1E76C31500FDDE05 /* LKRtpSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C81BB2761E77B34200FDDE05 /* LKRtpSession.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C81BB1EE1E76C31500FDDE05 /* LKRtpSession.cpp */; };
+		C81BB2861E77B4D400FDDE05 /* libios-jrtplib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C81BB27C1E77B49D00FDDE05 /* libios-jrtplib.a */; };
 		C81C5DC91E5ACC82002935E3 /* LKMP4Encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C81C5DC71E5ACC82002935E3 /* LKMP4Encoder.cpp */; };
 		C81C5DDC1E5ADB3A002935E3 /* libmp4v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C81C5DDB1E5ADB3A002935E3 /* libmp4v2.a */; };
 		C81C5DDD1E5ADB44002935E3 /* libmp4v2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C81C5DDB1E5ADB3A002935E3 /* libmp4v2.a */; };
@@ -121,6 +175,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C81BB27B1E77B49D00FDDE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81BB2771E77B49C00FDDE05 /* ios-jrtplib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3F9E6621BFC088E0052EA85;
+			remoteInfo = "ios-jrtplib";
+		};
+		C81BB2831E77B4C800FDDE05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C81BB2771E77B49C00FDDE05 /* ios-jrtplib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B3F9E6611BFC088E0052EA85;
+			remoteInfo = "ios-jrtplib";
+		};
 		C892B4111E56D86800556019 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A4269D4F1DCE2A1B0010A4EB /* Project object */;
@@ -242,6 +310,60 @@
 		A426A0601DCF71660010A4EB /* AWAVCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AWAVCaptureManager.h; sourceTree = "<group>"; };
 		A426A0611DCF71660010A4EB /* AWAVCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AWAVCaptureManager.m; sourceTree = "<group>"; };
 		A461BE381DE826D500F18219 /* camera_switch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera_switch.png; sourceTree = "<group>"; };
+		C81BB1EE1E76C31500FDDE05 /* LKRtpSession.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LKRtpSession.cpp; path = LKEncoder/RTP/LKRtpSession.cpp; sourceTree = "<group>"; };
+		C81BB1EF1E76C31500FDDE05 /* LKRtpSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LKRtpSession.h; path = LKEncoder/RTP/LKRtpSession.h; sourceTree = "<group>"; };
+		C81BB2031E76E87800FDDE05 /* jmutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jmutex.h; path = jrtplib/include/jmutex.h; sourceTree = "<group>"; };
+		C81BB2041E76E87800FDDE05 /* rtcpapppacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpapppacket.h; path = jrtplib/include/rtcpapppacket.h; sourceTree = "<group>"; };
+		C81BB2051E76E87800FDDE05 /* rtcpbyepacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpbyepacket.h; path = jrtplib/include/rtcpbyepacket.h; sourceTree = "<group>"; };
+		C81BB2061E76E87800FDDE05 /* rtcpcompoundpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpcompoundpacket.h; path = jrtplib/include/rtcpcompoundpacket.h; sourceTree = "<group>"; };
+		C81BB2071E76E87800FDDE05 /* rtcpcompoundpacketbuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpcompoundpacketbuilder.h; path = jrtplib/include/rtcpcompoundpacketbuilder.h; sourceTree = "<group>"; };
+		C81BB2081E76E87800FDDE05 /* rtcppacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcppacket.h; path = jrtplib/include/rtcppacket.h; sourceTree = "<group>"; };
+		C81BB2091E76E87800FDDE05 /* rtcppacketbuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcppacketbuilder.h; path = jrtplib/include/rtcppacketbuilder.h; sourceTree = "<group>"; };
+		C81BB20A1E76E87800FDDE05 /* rtcprrpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcprrpacket.h; path = jrtplib/include/rtcprrpacket.h; sourceTree = "<group>"; };
+		C81BB20B1E76E87800FDDE05 /* rtcpscheduler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpscheduler.h; path = jrtplib/include/rtcpscheduler.h; sourceTree = "<group>"; };
+		C81BB20C1E76E87800FDDE05 /* rtcpsdesinfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpsdesinfo.h; path = jrtplib/include/rtcpsdesinfo.h; sourceTree = "<group>"; };
+		C81BB20D1E76E87800FDDE05 /* rtcpsdespacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpsdespacket.h; path = jrtplib/include/rtcpsdespacket.h; sourceTree = "<group>"; };
+		C81BB20E1E76E87800FDDE05 /* rtcpsrpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpsrpacket.h; path = jrtplib/include/rtcpsrpacket.h; sourceTree = "<group>"; };
+		C81BB20F1E76E87800FDDE05 /* rtcpunknownpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtcpunknownpacket.h; path = jrtplib/include/rtcpunknownpacket.h; sourceTree = "<group>"; };
+		C81BB2101E76E87800FDDE05 /* rtpaddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpaddress.h; path = jrtplib/include/rtpaddress.h; sourceTree = "<group>"; };
+		C81BB2111E76E87800FDDE05 /* rtpbyteaddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpbyteaddress.h; path = jrtplib/include/rtpbyteaddress.h; sourceTree = "<group>"; };
+		C81BB2121E76E87800FDDE05 /* rtpcollisionlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpcollisionlist.h; path = jrtplib/include/rtpcollisionlist.h; sourceTree = "<group>"; };
+		C81BB2131E76E87800FDDE05 /* rtpconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpconfig.h; path = jrtplib/include/rtpconfig.h; sourceTree = "<group>"; };
+		C81BB2141E76E87800FDDE05 /* rtpdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpdebug.h; path = jrtplib/include/rtpdebug.h; sourceTree = "<group>"; };
+		C81BB2151E76E87800FDDE05 /* rtpdefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpdefines.h; path = jrtplib/include/rtpdefines.h; sourceTree = "<group>"; };
+		C81BB2161E76E87800FDDE05 /* rtperrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtperrors.h; path = jrtplib/include/rtperrors.h; sourceTree = "<group>"; };
+		C81BB2171E76E87800FDDE05 /* rtpexternaltransmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpexternaltransmitter.h; path = jrtplib/include/rtpexternaltransmitter.h; sourceTree = "<group>"; };
+		C81BB2181E76E87800FDDE05 /* rtphashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtphashtable.h; path = jrtplib/include/rtphashtable.h; sourceTree = "<group>"; };
+		C81BB2191E76E87800FDDE05 /* rtpinternalsourcedata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpinternalsourcedata.h; path = jrtplib/include/rtpinternalsourcedata.h; sourceTree = "<group>"; };
+		C81BB21A1E76E87800FDDE05 /* rtpipv4address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpipv4address.h; path = jrtplib/include/rtpipv4address.h; sourceTree = "<group>"; };
+		C81BB21B1E76E87800FDDE05 /* rtpipv4destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpipv4destination.h; path = jrtplib/include/rtpipv4destination.h; sourceTree = "<group>"; };
+		C81BB21C1E76E87800FDDE05 /* rtpipv6address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpipv6address.h; path = jrtplib/include/rtpipv6address.h; sourceTree = "<group>"; };
+		C81BB21D1E76E87800FDDE05 /* rtpipv6destination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpipv6destination.h; path = jrtplib/include/rtpipv6destination.h; sourceTree = "<group>"; };
+		C81BB21E1E76E87800FDDE05 /* rtpkeyhashtable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpkeyhashtable.h; path = jrtplib/include/rtpkeyhashtable.h; sourceTree = "<group>"; };
+		C81BB21F1E76E87800FDDE05 /* rtplibraryversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtplibraryversion.h; path = jrtplib/include/rtplibraryversion.h; sourceTree = "<group>"; };
+		C81BB2201E76E87800FDDE05 /* rtpmemorymanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpmemorymanager.h; path = jrtplib/include/rtpmemorymanager.h; sourceTree = "<group>"; };
+		C81BB2211E76E87800FDDE05 /* rtpmemoryobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpmemoryobject.h; path = jrtplib/include/rtpmemoryobject.h; sourceTree = "<group>"; };
+		C81BB2221E76E87800FDDE05 /* rtppacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtppacket.h; path = jrtplib/include/rtppacket.h; sourceTree = "<group>"; };
+		C81BB2231E76E87800FDDE05 /* rtppacketbuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtppacketbuilder.h; path = jrtplib/include/rtppacketbuilder.h; sourceTree = "<group>"; };
+		C81BB2241E76E87800FDDE05 /* rtppollthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtppollthread.h; path = jrtplib/include/rtppollthread.h; sourceTree = "<group>"; };
+		C81BB2251E76E87800FDDE05 /* rtprandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtprandom.h; path = jrtplib/include/rtprandom.h; sourceTree = "<group>"; };
+		C81BB2261E76E87800FDDE05 /* rtprandomrand48.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtprandomrand48.h; path = jrtplib/include/rtprandomrand48.h; sourceTree = "<group>"; };
+		C81BB2271E76E87800FDDE05 /* rtprandomrands.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtprandomrands.h; path = jrtplib/include/rtprandomrands.h; sourceTree = "<group>"; };
+		C81BB2281E76E87800FDDE05 /* rtprandomurandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtprandomurandom.h; path = jrtplib/include/rtprandomurandom.h; sourceTree = "<group>"; };
+		C81BB2291E76E87800FDDE05 /* rtprawpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtprawpacket.h; path = jrtplib/include/rtprawpacket.h; sourceTree = "<group>"; };
+		C81BB22A1E76E87800FDDE05 /* rtpsession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpsession.h; path = jrtplib/include/rtpsession.h; sourceTree = "<group>"; };
+		C81BB22B1E76E87800FDDE05 /* rtpsessionparams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpsessionparams.h; path = jrtplib/include/rtpsessionparams.h; sourceTree = "<group>"; };
+		C81BB22C1E76E87800FDDE05 /* rtpsessionsources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpsessionsources.h; path = jrtplib/include/rtpsessionsources.h; sourceTree = "<group>"; };
+		C81BB22D1E76E87800FDDE05 /* rtpsourcedata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpsourcedata.h; path = jrtplib/include/rtpsourcedata.h; sourceTree = "<group>"; };
+		C81BB22E1E76E87800FDDE05 /* rtpsources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpsources.h; path = jrtplib/include/rtpsources.h; sourceTree = "<group>"; };
+		C81BB22F1E76E87800FDDE05 /* rtpstructs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpstructs.h; path = jrtplib/include/rtpstructs.h; sourceTree = "<group>"; };
+		C81BB2301E76E87800FDDE05 /* rtptimeutilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtptimeutilities.h; path = jrtplib/include/rtptimeutilities.h; sourceTree = "<group>"; };
+		C81BB2311E76E87800FDDE05 /* rtptransmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtptransmitter.h; path = jrtplib/include/rtptransmitter.h; sourceTree = "<group>"; };
+		C81BB2321E76E87800FDDE05 /* rtptypes_win.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtptypes_win.h; path = jrtplib/include/rtptypes_win.h; sourceTree = "<group>"; };
+		C81BB2331E76E87800FDDE05 /* rtptypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtptypes.h; path = jrtplib/include/rtptypes.h; sourceTree = "<group>"; };
+		C81BB2341E76E87800FDDE05 /* rtpudpv4transmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rtpudpv4transmitter.h; path = jrtplib/include/rtpudpv4transmitter.h; sourceTree = "<group>"; };
+		C81BB2741E77B2A700FDDE05 /* libios-jrtplib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libios-jrtplib.a"; path = "clibs/3th-party/jrtplib/lib/libios-jrtplib.a"; sourceTree = "<group>"; };
+		C81BB2771E77B49C00FDDE05 /* ios-jrtplib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "ios-jrtplib.xcodeproj"; path = "../ios-jrtplib-master/ios-jrtplib.xcodeproj"; sourceTree = "<group>"; };
 		C81C5DC71E5ACC82002935E3 /* LKMP4Encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LKMP4Encoder.cpp; path = LKEncoder/Base/LKMP4Encoder.cpp; sourceTree = "<group>"; };
 		C81C5DC81E5ACC82002935E3 /* LKMP4Encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LKMP4Encoder.h; path = LKEncoder/Base/LKMP4Encoder.h; sourceTree = "<group>"; };
 		C81C5DDB1E5ADB3A002935E3 /* libmp4v2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmp4v2.a; path = libmp4v2/lib/libmp4v2.a; sourceTree = "<group>"; };
@@ -279,6 +401,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81BB2861E77B4D400FDDE05 /* libios-jrtplib.a in Frameworks */,
 				C892B41B1E56D9B800556019 /* libyuv.a in Frameworks */,
 				C892B4181E56D9AB00556019 /* libfaac.a in Frameworks */,
 				C892B4191E56D9B000556019 /* librtmp.a in Frameworks */,
@@ -293,10 +416,12 @@
 		A4269D4E1DCE2A1B0010A4EB = {
 			isa = PBXGroup;
 			children = (
+				C81BB2771E77B49C00FDDE05 /* ios-jrtplib.xcodeproj */,
 				A4269DA61DCE2A8C0010A4EB /* clibs */,
 				A4269D591DCE2A1B0010A4EB /* AWLive */,
 				C892B40D1E56D86800556019 /* AWMedia */,
 				A4269D581DCE2A1B0010A4EB /* Products */,
+				C81BB2731E77B2A600FDDE05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -429,6 +554,7 @@
 		A4269DA71DCE2A8C0010A4EB /* 3th-party */ = {
 			isa = PBXGroup;
 			children = (
+				C81BB2001E76E84E00FDDE05 /* jrtplib */,
 				C81C5DCA1E5ADAFD002935E3 /* libmp4v2 */,
 				A4269DA81DCE2A8C0010A4EB /* libfaac */,
 				A4269DAE1DCE2A8C0010A4EB /* librtmp */,
@@ -654,6 +780,104 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		C81BB1ED1E76C28A00FDDE05 /* RTP */ = {
+			isa = PBXGroup;
+			children = (
+				C81BB1EE1E76C31500FDDE05 /* LKRtpSession.cpp */,
+				C81BB1EF1E76C31500FDDE05 /* LKRtpSession.h */,
+			);
+			name = RTP;
+			sourceTree = "<group>";
+		};
+		C81BB2001E76E84E00FDDE05 /* jrtplib */ = {
+			isa = PBXGroup;
+			children = (
+				C81BB2021E76E86A00FDDE05 /* lib */,
+				C81BB2011E76E86200FDDE05 /* include */,
+			);
+			name = jrtplib;
+			sourceTree = "<group>";
+		};
+		C81BB2011E76E86200FDDE05 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C81BB2031E76E87800FDDE05 /* jmutex.h */,
+				C81BB2041E76E87800FDDE05 /* rtcpapppacket.h */,
+				C81BB2051E76E87800FDDE05 /* rtcpbyepacket.h */,
+				C81BB2061E76E87800FDDE05 /* rtcpcompoundpacket.h */,
+				C81BB2071E76E87800FDDE05 /* rtcpcompoundpacketbuilder.h */,
+				C81BB2081E76E87800FDDE05 /* rtcppacket.h */,
+				C81BB2091E76E87800FDDE05 /* rtcppacketbuilder.h */,
+				C81BB20A1E76E87800FDDE05 /* rtcprrpacket.h */,
+				C81BB20B1E76E87800FDDE05 /* rtcpscheduler.h */,
+				C81BB20C1E76E87800FDDE05 /* rtcpsdesinfo.h */,
+				C81BB20D1E76E87800FDDE05 /* rtcpsdespacket.h */,
+				C81BB20E1E76E87800FDDE05 /* rtcpsrpacket.h */,
+				C81BB20F1E76E87800FDDE05 /* rtcpunknownpacket.h */,
+				C81BB2101E76E87800FDDE05 /* rtpaddress.h */,
+				C81BB2111E76E87800FDDE05 /* rtpbyteaddress.h */,
+				C81BB2121E76E87800FDDE05 /* rtpcollisionlist.h */,
+				C81BB2131E76E87800FDDE05 /* rtpconfig.h */,
+				C81BB2141E76E87800FDDE05 /* rtpdebug.h */,
+				C81BB2151E76E87800FDDE05 /* rtpdefines.h */,
+				C81BB2161E76E87800FDDE05 /* rtperrors.h */,
+				C81BB2171E76E87800FDDE05 /* rtpexternaltransmitter.h */,
+				C81BB2181E76E87800FDDE05 /* rtphashtable.h */,
+				C81BB2191E76E87800FDDE05 /* rtpinternalsourcedata.h */,
+				C81BB21A1E76E87800FDDE05 /* rtpipv4address.h */,
+				C81BB21B1E76E87800FDDE05 /* rtpipv4destination.h */,
+				C81BB21C1E76E87800FDDE05 /* rtpipv6address.h */,
+				C81BB21D1E76E87800FDDE05 /* rtpipv6destination.h */,
+				C81BB21E1E76E87800FDDE05 /* rtpkeyhashtable.h */,
+				C81BB21F1E76E87800FDDE05 /* rtplibraryversion.h */,
+				C81BB2201E76E87800FDDE05 /* rtpmemorymanager.h */,
+				C81BB2211E76E87800FDDE05 /* rtpmemoryobject.h */,
+				C81BB2221E76E87800FDDE05 /* rtppacket.h */,
+				C81BB2231E76E87800FDDE05 /* rtppacketbuilder.h */,
+				C81BB2241E76E87800FDDE05 /* rtppollthread.h */,
+				C81BB2251E76E87800FDDE05 /* rtprandom.h */,
+				C81BB2261E76E87800FDDE05 /* rtprandomrand48.h */,
+				C81BB2271E76E87800FDDE05 /* rtprandomrands.h */,
+				C81BB2281E76E87800FDDE05 /* rtprandomurandom.h */,
+				C81BB2291E76E87800FDDE05 /* rtprawpacket.h */,
+				C81BB22A1E76E87800FDDE05 /* rtpsession.h */,
+				C81BB22B1E76E87800FDDE05 /* rtpsessionparams.h */,
+				C81BB22C1E76E87800FDDE05 /* rtpsessionsources.h */,
+				C81BB22D1E76E87800FDDE05 /* rtpsourcedata.h */,
+				C81BB22E1E76E87800FDDE05 /* rtpsources.h */,
+				C81BB22F1E76E87800FDDE05 /* rtpstructs.h */,
+				C81BB2301E76E87800FDDE05 /* rtptimeutilities.h */,
+				C81BB2311E76E87800FDDE05 /* rtptransmitter.h */,
+				C81BB2321E76E87800FDDE05 /* rtptypes_win.h */,
+				C81BB2331E76E87800FDDE05 /* rtptypes.h */,
+				C81BB2341E76E87800FDDE05 /* rtpudpv4transmitter.h */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		C81BB2021E76E86A00FDDE05 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		C81BB2731E77B2A600FDDE05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C81BB2741E77B2A700FDDE05 /* libios-jrtplib.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C81BB2781E77B49C00FDDE05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C81BB27C1E77B49D00FDDE05 /* libios-jrtplib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C81C5DCA1E5ADAFD002935E3 /* libmp4v2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -691,6 +915,7 @@
 		C892B4311E56F29200556019 /* LKEncoder */ = {
 			isa = PBXGroup;
 			children = (
+				C81BB1ED1E76C28A00FDDE05 /* RTP */,
 				C892B4321E56F39900556019 /* Base */,
 				C892B4331E56F3A200556019 /* HW */,
 				C892B4341E56F3A900556019 /* SW */,
@@ -738,6 +963,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C892B4101E56D86800556019 /* AWMedia.h in Headers */,
+				C81BB2671E76E98E00FDDE05 /* LKRtpSession.h in Headers */,
 				C892B4721E59F6AA00556019 /* http.h in Headers */,
 				C892B4731E59F6AB00556019 /* log.h in Headers */,
 				C892B46F1E59F69F00556019 /* faac.h in Headers */,
@@ -771,6 +997,56 @@
 				C892B4701E59F6A000556019 /* faaccfg.h in Headers */,
 				C892B4781E59F6BD00556019 /* aw_all.h in Headers */,
 				C892B4761E59F6B200556019 /* x264_config.h in Headers */,
+				C81BB2351E76E8BE00FDDE05 /* jmutex.h in Headers */,
+				C81BB2361E76E8BE00FDDE05 /* rtcpapppacket.h in Headers */,
+				C81BB2371E76E8BE00FDDE05 /* rtcpbyepacket.h in Headers */,
+				C81BB2381E76E8BE00FDDE05 /* rtcpcompoundpacket.h in Headers */,
+				C81BB2391E76E8BE00FDDE05 /* rtcpcompoundpacketbuilder.h in Headers */,
+				C81BB23A1E76E8BE00FDDE05 /* rtcppacket.h in Headers */,
+				C81BB23B1E76E8BE00FDDE05 /* rtcppacketbuilder.h in Headers */,
+				C81BB23C1E76E8BE00FDDE05 /* rtcprrpacket.h in Headers */,
+				C81BB23D1E76E8BE00FDDE05 /* rtcpscheduler.h in Headers */,
+				C81BB23E1E76E8BE00FDDE05 /* rtcpsdesinfo.h in Headers */,
+				C81BB23F1E76E8BE00FDDE05 /* rtcpsdespacket.h in Headers */,
+				C81BB2401E76E8BE00FDDE05 /* rtcpsrpacket.h in Headers */,
+				C81BB2411E76E8BE00FDDE05 /* rtcpunknownpacket.h in Headers */,
+				C81BB2421E76E8BE00FDDE05 /* rtpaddress.h in Headers */,
+				C81BB2431E76E8BE00FDDE05 /* rtpbyteaddress.h in Headers */,
+				C81BB2441E76E8BE00FDDE05 /* rtpcollisionlist.h in Headers */,
+				C81BB2451E76E8BE00FDDE05 /* rtpconfig.h in Headers */,
+				C81BB2461E76E8BE00FDDE05 /* rtpdebug.h in Headers */,
+				C81BB2471E76E8BE00FDDE05 /* rtpdefines.h in Headers */,
+				C81BB2481E76E8BF00FDDE05 /* rtperrors.h in Headers */,
+				C81BB2491E76E8BF00FDDE05 /* rtpexternaltransmitter.h in Headers */,
+				C81BB24A1E76E8BF00FDDE05 /* rtphashtable.h in Headers */,
+				C81BB24B1E76E8BF00FDDE05 /* rtpinternalsourcedata.h in Headers */,
+				C81BB24C1E76E8BF00FDDE05 /* rtpipv4address.h in Headers */,
+				C81BB24D1E76E8BF00FDDE05 /* rtpipv4destination.h in Headers */,
+				C81BB24E1E76E8BF00FDDE05 /* rtpipv6address.h in Headers */,
+				C81BB24F1E76E8BF00FDDE05 /* rtpipv6destination.h in Headers */,
+				C81BB2501E76E8BF00FDDE05 /* rtpkeyhashtable.h in Headers */,
+				C81BB2511E76E8BF00FDDE05 /* rtplibraryversion.h in Headers */,
+				C81BB2521E76E8BF00FDDE05 /* rtpmemorymanager.h in Headers */,
+				C81BB2531E76E8BF00FDDE05 /* rtpmemoryobject.h in Headers */,
+				C81BB2541E76E8BF00FDDE05 /* rtppacket.h in Headers */,
+				C81BB2551E76E8BF00FDDE05 /* rtppacketbuilder.h in Headers */,
+				C81BB2561E76E8BF00FDDE05 /* rtppollthread.h in Headers */,
+				C81BB2571E76E8BF00FDDE05 /* rtprandom.h in Headers */,
+				C81BB2581E76E8BF00FDDE05 /* rtprandomrand48.h in Headers */,
+				C81BB2591E76E8BF00FDDE05 /* rtprandomrands.h in Headers */,
+				C81BB25A1E76E8BF00FDDE05 /* rtprandomurandom.h in Headers */,
+				C81BB25B1E76E8BF00FDDE05 /* rtprawpacket.h in Headers */,
+				C81BB25C1E76E8BF00FDDE05 /* rtpsession.h in Headers */,
+				C81BB25D1E76E8BF00FDDE05 /* rtpsessionparams.h in Headers */,
+				C81BB25E1E76E8BF00FDDE05 /* rtpsessionsources.h in Headers */,
+				C81BB25F1E76E8BF00FDDE05 /* rtpsourcedata.h in Headers */,
+				C81BB2601E76E8BF00FDDE05 /* rtpsources.h in Headers */,
+				C81BB2611E76E8BF00FDDE05 /* rtpstructs.h in Headers */,
+				C81BB2621E76E8BF00FDDE05 /* rtptimeutilities.h in Headers */,
+				C81BB2631E76E8BF00FDDE05 /* rtptransmitter.h in Headers */,
+				C81BB2641E76E8BF00FDDE05 /* rtptypes_win.h in Headers */,
+				C81BB2651E76E8BF00FDDE05 /* rtptypes.h in Headers */,
+				C81BB2661E76E8BF00FDDE05 /* rtpudpv4transmitter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -808,6 +1084,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C81BB2841E77B4C800FDDE05 /* PBXTargetDependency */,
 			);
 			name = AWMedia;
 			productName = AWMedia;
@@ -844,6 +1121,12 @@
 			mainGroup = A4269D4E1DCE2A1B0010A4EB;
 			productRefGroup = A4269D581DCE2A1B0010A4EB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C81BB2781E77B49C00FDDE05 /* Products */;
+					ProjectRef = C81BB2771E77B49C00FDDE05 /* ios-jrtplib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A4269D561DCE2A1B0010A4EB /* AWLive */,
@@ -851,6 +1134,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C81BB27C1E77B49D00FDDE05 /* libios-jrtplib.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libios-jrtplib.a";
+			remoteRef = C81BB27B1E77B49D00FDDE05 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A4269D551DCE2A1B0010A4EB /* Resources */ = {
@@ -903,6 +1196,7 @@
 				C81C5DC91E5ACC82002935E3 /* LKMP4Encoder.cpp in Sources */,
 				C892B46D1E59D70700556019 /* LKHWAACEncoder.mm in Sources */,
 				A4269D9C1DCE2A390010A4EB /* AWAudioEncoder.m in Sources */,
+				C81BB1F01E76C31500FDDE05 /* LKRtpSession.cpp in Sources */,
 				A4269DA21DCE2A390010A4EB /* AWSWX264Encoder.m in Sources */,
 				A4269DA11DCE2A390010A4EB /* AWSWFaacEncoder.m in Sources */,
 				A4269F861DCE2A8E0010A4EB /* aw_streamer.c in Sources */,
@@ -933,6 +1227,7 @@
 				C892B4251E56D9E900556019 /* aw_sw_x264_encoder.c in Sources */,
 				C892B4261E56D9E900556019 /* aw_x264.c in Sources */,
 				C892B4221E56D9D900556019 /* aw_thread_poll.c in Sources */,
+				C81BB2761E77B34200FDDE05 /* LKRtpSession.cpp in Sources */,
 				C892B4C01E59FCED00556019 /* LKHWAACEncoder.mm in Sources */,
 				C892B4C11E59FCF000556019 /* LKHWH264Encoder.mm in Sources */,
 				C892B4C21E59FCF300556019 /* LKVideoEncoder.cpp in Sources */,
@@ -952,6 +1247,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C81BB2841E77B4C800FDDE05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ios-jrtplib";
+			targetProxy = C81BB2831E77B4C800FDDE05 /* PBXContainerItemProxy */;
+		};
 		C892B4121E56D86800556019 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C892B40B1E56D86800556019 /* AWMedia */;
@@ -1020,6 +1320,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/Visionin/project/Apple/ios-jrtplib-master/ios-jrtplib";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
@@ -1063,6 +1364,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/Visionin/project/Apple/ios-jrtplib-master/ios-jrtplib";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -1157,6 +1459,7 @@
 					"$(PROJECT_DIR)/clibs/3th-party/libx264/lib",
 					"$(PROJECT_DIR)/clibs/3th-party/libyuv/lib",
 					"$(PROJECT_DIR)/clibs/3th-party/libmp4v2/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/jrtplib/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rex.AWMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1193,6 +1496,7 @@
 					"$(PROJECT_DIR)/clibs/3th-party/libx264/lib",
 					"$(PROJECT_DIR)/clibs/3th-party/libyuv/lib",
 					"$(PROJECT_DIR)/clibs/3th-party/libmp4v2/lib",
+					"$(PROJECT_DIR)/clibs/3th-party/jrtplib/lib",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.rex.AWMedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";

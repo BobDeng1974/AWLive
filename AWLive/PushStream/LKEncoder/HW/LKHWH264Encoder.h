@@ -33,10 +33,10 @@ public:
 
 class LKHWH264Encoder: public LKVideoEncoder{
 public:
-    LKHWH264Encoder(int width, int height, LKHWH264Callback* callback=NULL);
+    LKHWH264Encoder(LKHWH264Callback* callback=NULL);
     ~LKHWH264Encoder();
     
-    virtual void open();
+    virtual void open(int width, int height);
     virtual void close();
     
     virtual aw_flv_video_tag* encodeYUVDataToFlvTag(unsigned char* yuv);
@@ -45,10 +45,15 @@ public:
     virtual aw_flv_video_tag* createSpsPpsFlvTag();
     
     virtual bool encodeN12BytesToH264(unsigned char* yuv);
-    virtual bool encodePiexelBufferToH264(void* pixelbuffer);
+    virtual int encodePiexelBufferToH264(void* pixelbuffer);
     
     LKHWH264Callback*   m_encoder_callback;
     lk_encoder_t*       m_encoder_session;
+    
+    uint32_t        m_frame_count;
+    uint32_t        m_frame_rate;
+    uint32_t        m_encode_frame;
+    time_t          m_encode_time;
 };
 
 #endif

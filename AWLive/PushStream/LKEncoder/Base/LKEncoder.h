@@ -33,7 +33,7 @@ typedef enum {
 
 class LKEncoder{
 public:
-    virtual void open() = 0;
+    virtual void open(int width, int height) = 0;
     virtual void close() = 0;
     void onError(AWEncoderErrorCode code, const char* des){
         // log

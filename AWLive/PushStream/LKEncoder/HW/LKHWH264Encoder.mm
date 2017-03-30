@@ -19,16 +19,18 @@ struct lk_encoder_t{
     bool    has_spspps;
 };
 
-LKHWH264Encoder::LKHWH264Encoder(int width, int height, LKHWH264Callback* callback):
-LKVideoEncoder(width, height)
+LKHWH264Encoder::LKHWH264Encoder(LKHWH264Callback* callback)
 {
     m_encoder_session = (lk_encoder_t*)calloc(1, sizeof(lk_encoder_t));
     m_encoder_session->vSemaphore = dispatch_semaphore_create(0);
     m_encoder_callback = callback;
     m_is_keyframe = false;
+    m_frame_count = 0;
+    m_encode_frame = 0;
 }
 LKHWH264Encoder::~LKHWH264Encoder(){
     free(m_encoder_session);
+    CFRelease(m_encoder_session->vEnSession);
 }
 
 static void vtCompressionSessionCallback (void * CM_NULLABLE outputCallbackRefCon,
@@ -37,7 +39,15 @@ static void vtCompressionSessionCallback (void * CM_NULLABLE outputCallbackRefCo
                                           VTEncodeInfoFlags infoFlags,
                                           CM_NULLABLE CMSampleBufferRef sampleBuffer );
 
-void LKHWH264Encoder::open(){
+void LKHWH264Encoder::open(int width, int height){
+    m_video_config.width = width;
+    m_video_config.height = height;
+    m_encode_time = time(0);
+    m_frame_count = 0;
+    m_encode_frame = 0;
+    srand((int)time(0));
+    m_frame_rate = 0;
+    
     //创建 video encode session
     // 创建 video encode session
     // 传入视频宽高，编码类型：kCMVideoCodecType_H264
@@ -56,9 +66,9 @@ void LKHWH264Encoder::open(){
         // 设置实时编码
         VTSessionSetProperty(m_encoder_session->vEnSession, kVTCompressionPropertyKey_RealTime, kCFBooleanTrue);
         // 关闭重排Frame，因为有了B帧（双向预测帧，根据前后的图像计算出本帧）后，编码顺序可能跟显示顺序不同。此参数可以关闭B帧。
-        // VTSessionSetProperty(m_encoder_session->vEnSession, kVTCompressionPropertyKey_AllowFrameReordering, kCFBooleanFalse);
+        VTSessionSetProperty(m_encoder_session->vEnSession, kVTCompressionPropertyKey_AllowFrameReordering, kCFBooleanFalse);
         // 关键帧最大间隔，关键帧也就是I帧。此处表示关键帧最大间隔为2s。
-        VTSessionSetProperty(m_encoder_session->vEnSession, kVTCompressionPropertyKey_MaxKeyFrameInterval, (__bridge CFTypeRef)@(m_video_config.fps * 5));
+        VTSessionSetProperty(m_encoder_session->vEnSession, kVTCompressionPropertyKey_MaxKeyFrameInterval, (__bridge CFTypeRef)@(m_video_config.fps * 2));
         //设置帧率，只用于初始化session， 不是实际FPS
         status = VTSessionSetProperty(m_encoder_session->vEnSession, kVTCompressionPropertyKey_ExpectedFrameRate, (__bridge CFTypeRef)@(m_video_config.fps));
         // 关于B帧 P帧 和I帧，请参考：http://blog.csdn.net/abcjennifer/article/details/6577934
@@ -82,6 +92,7 @@ void LKHWH264Encoder::close(){
     m_encoder_session->naluData = nil;
     m_is_keyframe = false;
     m_frame_count = 0;
+    m_encode_frame = 0;
     m_encoder_session->spsPpsData = nil;
 }
 
@@ -114,22 +125,33 @@ bool LKHWH264Encoder::encodeN12BytesToH264(unsigned char* yuv_data){
     return st;
 }
 
-bool LKHWH264Encoder::encodePiexelBufferToH264(void* pixelbuffer){
+int LKHWH264Encoder::encodePiexelBufferToH264(void* pixelbuffer){
     if (!m_encoder_session->vEnSession) {
         return NULL;
     }
     
-    OSStatus status = noErr;
+    m_frame_count++;
+    
+    // 每秒统计一次帧率
+    if(time(0)-m_encode_time>0){
+        m_frame_rate = m_frame_count/(time(0)-m_encode_time);
+    }
+    
+    int r = rand()%100;
+    if(r<((int)m_frame_rate-15)*100/(int)m_frame_rate){
+        return noErr;
+    }
+    
     CVPixelBufferRef pixelBuf = (CVPixelBufferRef)pixelbuffer;
     //硬编码 CmSampleBufRef
     //时间戳
     //uint32_t ptsMs = self.manager.timestamp + 1; //self.vFrameCount++ * 1000.f / self.videoConfig.fps;
-    CMTime pts = CMTimeMake(++m_frame_count, 1000);
-    
+    CMTime pts = CMTimeMake(m_encode_frame++, 1000);
+    printf("frame[%d / %d]\n", m_encode_frame, m_encode_frame);
     //硬编码主要其实就这一句。将携带NV12数据的PixelBuf送到硬编码器中，进行编码。
     VTEncodeInfoFlags flags;
-    status = VTCompressionSessionEncodeFrame(m_encoder_session->vEnSession, pixelBuf, pts, kCMTimeInvalid, NULL, NULL, &flags);
-    return status==noErr;
+    OSStatus status = VTCompressionSessionEncodeFrame(m_encoder_session->vEnSession, pixelBuf, pts, kCMTimeInvalid, NULL, NULL, &flags);
+    return status;
 }
 
 aw_flv_video_tag* LKHWH264Encoder::encodeYUVDataToFlvTag(unsigned char *yuv_data){
@@ -154,6 +176,7 @@ static void vtCompressionSessionCallback (void * CM_NULLABLE outputCallbackRefCo
                                           CM_NULLABLE CMSampleBufferRef sampleBuffer ){
     //通过outputCallbackRefCon获取AWHWH264Encoder的对象指针，将编码好的h264数据传出去。
     LKHWH264Encoder *encoder = (LKHWH264Encoder *)(outputCallbackRefCon);
+    ++encoder->m_encode_frame;
     lk_encoder_t* session = encoder->m_encoder_session;
     //判断是否编码成功
     if (status != noErr) {
